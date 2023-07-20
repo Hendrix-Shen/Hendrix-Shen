@@ -7,14 +7,12 @@ on:
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
   # push:
-  
-  # Grant writable permission.
-  permissions:
     contents: write
       
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    # Grant writable permission.
     permissions:
       contents: write
     steps:
